@@ -12,19 +12,31 @@
         <div class="form">
             <form action="">
                 <div class="input">
-                    <input type="text" placeholder="Your name">
+                    <input id="user-name" type="text" placeholder="Your name">
                 </div>
                 <div class="input">
-                    <input type="email" placeholder="abc@gmail.com">
+                    <input id="email" type="email" placeholder="abc@gmail.com">
                 </div>
                 <div class="input">
-                    <input type="password" placeholder="Password">
+                    <input id="pass" type="password" placeholder="Password">
                 </div>
                 <div class="input">
-                    <input type="button" value="Submit">
+                    <input id="button" type="button" value="Submit">
                 </div>
             </form>
         </div>
     </div>
+    <script>
+        const userName = document.getElementById('user-name');
+        const email = document.getElementById('email');
+        const pass = document.getElementById('pass');
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function(){
+            console.log(userName.value);
+            console.log(email.value);
+            console.log(pass.value);
+        })
+    </script>
 </body>
 </html>
